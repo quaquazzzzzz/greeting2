@@ -1,0 +1,12 @@
+name: Greeting
+
+on: [push, pull_request]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run greeting
+      run: echo "Hello, welcome to the Anna repository!"
